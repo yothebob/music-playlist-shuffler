@@ -1,5 +1,5 @@
 # music-playlist-shuffler
-Small python script to rename your .mp3 files in order from 0 + randomly. Shuffle a folder of music this way! 
+Small python script to rename your files in order from 0. + randomly. Shuffle a folder of music this way! 
 
   # Before
     0.Lofi-pilot.mp3  25.firetrack.mp4    heavy_metal.mp4  really_lofi.mp4
@@ -13,18 +13,18 @@ Small python script to rename your .mp3 files in order from 0 + randomly. Shuffl
 
 
 # How to run 
-1. Go to the directory that has "suffle.py"
+1. Go to the directory that has "shuffle.py"
 
 2.in a command line type...
 
 Linux/Mac
 ```console
-python3 -c "from shuffle import shuffle_music;shuffle_music('<PATH-TO-PLAYLIST>')"
+python3 -c "from shuffle import shuffle_music;shuffle_music('<PATH-TO-PLAYLIST/>')"
 ```
 
 Windows
 ```console
-python -c "from shuffle import shuffle_music;shuffle_music('<PATH-TO-PLAYLIST>')"
+python -c "from shuffle import shuffle_music;shuffle_music('<PATH-TO-PLAYLIST\>')"
 ```
 
 # Make a command (Linux)
@@ -37,7 +37,7 @@ python -c "from shuffle import shuffle_music;shuffle_music('<PATH-TO-PLAYLIST>')
 
 cd ~/Directory/for/shuffle-python-file
 
-python3 -c "from shuffle import shuffle_music;shuffle_music('<PATH-TO-PLAYLIST>')"
+python3 -c "from shuffle import shuffle_music;shuffle_music('<PATH-TO-PLAYLIST/>')"
 ```
 3. create alias in terminal 
 ```console
