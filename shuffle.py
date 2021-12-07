@@ -22,3 +22,15 @@ def shuffle_music(playlist_dir="/home/bbrodrick/Music/"):
     print("Done! New playlist Made!")
     print([filename for filename in sorted(os.listdir(playlist_dir))])
 
+def unshuffle_music(playlist_dir="/home/bbrodrick/Music/"):
+
+    os.chdir(playlist_dir)
+
+    for file in os.listdir(playlist_dir):
+        for index in range(len(str(file))):
+            if index < 5 and type(file[index]) != int:
+                if file[index] == "." :
+                    os.rename(file,file[index+1:])
+                    break
+    print("Done! unshuffled!")
+    print([filename for filename in os.listdir(playlist_dir)])
